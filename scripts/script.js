@@ -37,4 +37,4 @@ navLinks.forEach(link => {
       });
     }
   });
-});
+}); 
