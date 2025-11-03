@@ -287,18 +287,18 @@ footer a:hover {
     grid-template-columns: 1fr 1fr;
   }
   
-#projeto-container .projeto {
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
+  #projeto-container .projeto {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 
-#projeto-container .projeto-info {
-  max-width: 80%;
-}
+  #projeto-container .projeto-info {
+    max-width: 80%;
+  }
 
-#projeto-container .foto {
-  aspect-ratio: 1/1;
-  max-width: 20%;
-  max-height: 200px;
-}
-}
+  #projeto-container .foto {
+    aspect-ratio: 1/1;
+    max-width: 20%;
+    max-height: 200px;
+  }
+  }
