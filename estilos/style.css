@@ -12,6 +12,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  transition: all 0.5s ease;
 }
 
 :root {
@@ -308,6 +309,13 @@ footer a:hover {
 /* CONFIGURAÇÃO PARA MODO ESCURO */
 
 body.escuro {
-  background: #1B1C1B;
-  color: #ffffff;
+  --fundo-principal: #1b1c1b;
+  --texto: #ffffff;
+  --texto-inverso: #1b1c1b;
+  --destaque: #FE4921;
+  --destaque-inverso: #98321C;
+  --fundo-card: #383B38;
+
+  background-color: var(--fundo-principal);
+  color: var(--texto);
 }
