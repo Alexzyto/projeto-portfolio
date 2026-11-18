@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Alexandre </title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <script src="https://kit.fontawesome.com/dac51ac98b.js" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+    <header>
+        <nav id="menu"> 
+            <ul>
+                <li> <abbr title="Home"><a href="#video" class="link"><i class="fa-solid fa-house"></i></a></abbr> </li>
+                <li> <abbr title="Skills"><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></abbr> </li>
+                <li> <abbr title="Formação"><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></abbr> </li>
+                <li> <abbr title="Projetos"><a href="#projetos" class="link"><i class="fa-solid fa-trowel-bricks"></i></a></abbr> </li>
+                <li>  <abbr title="Mudar Tema"><a href="#" id="botao-tema" onclick="event.preventDefault(); toggleTheme();" ><i class="fa-solid fa-moon"></i></a></abbr> </li>
+                <!-- o codigo em js impede de, ao mudar de tema, que volte para o inicio do site-->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ficha">
+            <img src="imagens/perfil.png" alt="" class="foto">
+            <h1>Alexandre</h1>
+            <p>Olá! Sou um profissional multimídia, apaixonado por criar — seja através da edição de vídeos, do design digital ou do desenvolvimento front-end.
+            Tenho experiência prática em criação de conteúdo para internet, produção visual e desenvolvimento de sites modernos e responsivos, sempre buscando unir criatividade e funcionalidade em cada projeto. <br> <br>
+            💻 Desenvolvimento Front-end <br> 
+            Formado e certificado em HTML5, CSS3 e JavaScript, desenvolvo sites e portfólios personalizados com foco em responsividade, design moderno e boas práticas de código. <br>
+            </p>
+            <div id="social">
+                <a href="https://www.linkedin.com/in/alexandre-bard-70b727368/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Alexzyto?tab=stars" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </section>
+
+        <section id="detalhes">
+            <!--
+            <article id="video">
+                <h2> <i class="fa-solid fa-handshake"></i> Deixe-me apresentar</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vl0eatPehLs?si=bhl3Io869SpN4_7D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+                </div>
+            </article>  Fim article#video
+            -->
+            <article id="skills">
+                <h2> <i class="fa-solid fa-brain"></i>Minhas Skills</h2>
+
+                <div id="skill-container"> <!-- HTML5 -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> HTML5
+                            </span>
+                            <span class="porcent">
+                                90%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 90%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- CSS3 -->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> CSS3
+                            </span>
+                            <span class="porcent">
+                                80%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 80%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- JavaScript -->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> JavaScript
+                            </span>
+                            <span class="porcent">
+                                50%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 50%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- Python -->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> Python
+                            </span>
+                            <span class="porcent">
+                                50%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 50%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- Design -->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> Design
+                            </span>
+                            <span class="porcent">
+                                85%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 85%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- Office -->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> Pacote Office
+                            </span>
+                            <span class="porcent">
+                                70%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 70%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- Edicao de Video -->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> Edição de vídeo
+                            </span>
+                            <span class="porcent">
+                                85%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 85%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- Comunicação -->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-person-rays"></i> Comunicação
+                            </span>
+                            <span class="porcent">
+                                90%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 90%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- Trabalho em Equipe -->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-person-rays"></i> Trabalho em Equipe
+                            </span>
+                            <span class="porcent">
+                                90%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 90%;">
+
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+
+            </article> <!-- Fim article#skills-->
+
+            <article id="formacao">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Cursos e Certificações </h2>
+
+                <div id="formacao-container">
+                    <div class="curso">
+                        <p class="periodo">2023</p>
+                        <h3 class="Instituição">Curso em Vídeo - HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</h3>
+                        <p class="titulacao">Desenvolvedor Front-end</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2024</p>
+                        <h3 class="Instituição">Curso em Vídeo - HTML5 e CSS3: módulo 2 de 5 [40 HORAS]</h3>
+                        <p class="titulacao">Desenvolvedor Front-end</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2024</p>
+                        <h3 class="Instituição">Curso em Vídeo - HTML5 e CSS3: módulo 3 de 5 [40 HORAS]</h3>
+                        <p class="titulacao">Desenvolvedor Front-end</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2025</p>
+                        <h3 class="Instituição">Curso em Vídeo - HTML5 e CSS3: módulo 4 de 5 [40 HORAS]</h3>
+                        <p class="titulacao">Desenvolvedor Front-end</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2025</p>
+                        <h3 class="Instituição">Curso em Vídeo - HTML5 e CSS3: módulo 5 de 5 [40 HORAS]</h3>
+                        <p class="titulacao">Desenvolvedor Front-end</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2025</p>
+                        <h3 class="Instituição">Curso em Vídeo - Javascript [40 HORAS]</h3>
+                        <p class="titulacao">Desenvolvedor Front-end</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2025</p>
+                        <h3 class="Instituição">Curso em Vídeo - Git e GitHub [20 HORAS]</h3>
+                        <p class="titulacao">Desenvolvedor Front-end</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2025</p>
+                        <h3 class="Instituição">Curso em Vídeo - Inteligência Artificial [40 HORAS]</h3>
+                        <p class="titulacao">Desenvolvedor Front-end</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">4º Período (cursando) </p>
+                        <h3 class="Instituição">Estácio - Engenharia de Produção</h3>
+                        <p class="titulacao">Engenheiro de Produção</p>
+                    </div>
+                    <div class="curso">
+                        <p class="periodo">4º Trimestre (cursando) </p>
+                        <h3 class="Instituição">UNINTER - Engenhenaria de Software</h3>
+                        <p class="titulacao">Engenheiro de Software</p>
+                    </div>
+                </div>
+
+            </article> <!-- Fim article#formacao-->
+
+            <article id="projetos">
+                <h2><i class="fa-solid fa-trowel-bricks"></i> Projetos</h2>
+
+                <div id="projeto-container">
+                    <div class="projeto"> <!-- Projeto 01 -->
+                        <img src="imagens/projeto-01-cordel.jpg" alt="Projeto 1" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2023</p>
+                            <h3 class="titulo">Projeto Cordel</h3>
+                            <p>Projeto construido para treinar o uso de imagens fixas no fundo de um site.</p>
+                            <details class="descricao">
+                                <summary>Saiba Mais</summary>
+                                <p>Este projeto foi inspirado nos cordéis <strong>literários brasileiros</strong>. O objetivo foi treinar o uso de <strong>imagens fixas de fundo</strong>, <strong>efeitos de rolagem (parallax)</strong> e <strong>tipografia temática</strong>. O resultado é uma página com estilo poético e visual marcante, remetendo à cultura popular nordestina.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!-- Projeto 02 -->
+                        <img src="imagens/projeto-02-minimal.png" alt="Projeto 2" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2024</p>
+                            <h3 class="titulo">Projeto Minimal</h3>
+                            <p>Projeto construido para treinar o uso minimalismo em sites.</p>
+                            <details class="descricao">
+                                <summary>Saiba Mais</summary>
+                                <p>Inspirado no conceito de “menos é mais”, este projeto busca aplicar o <strong>minimalismo</strong> no desenvolvimento web. A ideia foi explorar <strong>espaços em branco, tipografia limpa e estrutura simplificada</strong>, resultando em um site leve e elegante, com foco total no conteúdo.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!-- Projeto 03 -->
+                        <img src="imagens/projeto-03-android.jpg" alt="Projeto 3" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2024</p>
+                            <h3 class="titulo">Projeto Android</h3>
+                            <p>Projeto construido para treinar o uso de sites responsivos.</p>
+                            <details class="descricao">
+                                <summary>Saiba Mais</summary>
+                                <p>Este site foi desenvolvido para treinar o <strong>design responsivo</strong> e o uso de <strong>media queries</strong>, adaptando o conteúdo para diferentes tamanhos de tela. O tema Android foi escolhido para praticar a combinação de <strong>cores vibrantes e elementos tecnológicos</strong>, mantendo uma navegação fluida em qualquer dispositivo.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!-- Projeto 04 -->
+                        <img src="imagens/projeto-04-links.png" alt="Projeto 4" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2024</p>
+                            <h3 class="titulo">Projeto de Redes Sociais</h3>
+                            <p>Projeto construido para treinar o uso de links e páginas de redes sociais.</p>
+                            <details class="descricao">
+                                <summary>Saiba Mais</summary>
+                                <p>Um projeto criado para treinar <strong>links, ícones interativos e organização de perfis</strong>. O design se inspira em redes sociais populares, e o foco foi praticar o <strong>uso de imagens, espaçamento e hierarquia visual</strong>, simulando uma interface social dinâmica e atrativa.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!-- Projeto 05 -->
+                        <img src="imagens/projeto-05-login.png" alt="Projeto 5" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2025</p>
+                            <h3 class="titulo">Projeto de Login</h3>
+                            <p>Projeto construido para ter uma tela de cadastro/login em seu site.</p>
+                            <details class="descricao">
+                                <summary>Saiba Mais</summary>
+                                <p>Este projeto apresenta uma tela de login estilizada, feita para praticar <strong>formulários</strong>, <strong>validação de campos</strong> e <strong>design com foco em usabilidade</strong>. A interface traz um visual moderno com gradientes e efeitos sutis, representando uma página de autenticação que poderia ser usada em sites reais.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!-- Projeto 06 -->
+                        <img src="imagens/projeto-06-cafe.png" alt="Projeto 6" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2025</p>
+                            <h3 class="titulo">Projeto de Cafeteria</h3>
+                            <p>Projeto construido para pessoas que desejam abrir seu negócio de café.</p>
+                            <details class="descricao">
+                                <summary>Saiba Mais</summary>
+                                <p>Este projeto foi desenvolvido com o objetivo de simular o site de uma cafeteria moderna. Nele, explorei o uso de <strong>layout responsivo</strong>, <strong>paleta de cores quentes</strong> e <strong>tipografia elegante</strong>, buscando transmitir a sensação de aconchego típica de um café. O site conta com seções de produtos, cardápio e contato, todas pensadas para oferecer uma <strong>experiência agradável</strong> ao usuário.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </article> <!-- Fim article#projetos-->
+        </section>
+    </main>
+
+    <footer>
+        Portfólio desenvolvido por <a href="https://www.cursoemvideo.com/" target="_blank" rel="nofollow">Alexandre Bard</a> em 2025
+    </footer>
+
+    <script src="scripts/script.js"> </script>
+</body>
+</html>
